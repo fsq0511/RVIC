@@ -18,7 +18,9 @@ if py3:
         return iter(d.values())
     pyrange = range
     pyzip = zip
-    from configparser import SafeConfigParser
+    # from configparser import SafeConfigParser
+    from configparser import ConfigParser as SafeConfigParser
+
 else:
     # Python 2
     basestring = basestring
